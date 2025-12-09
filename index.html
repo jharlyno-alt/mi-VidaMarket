@@ -34,10 +34,10 @@
                         class="d-flex flex-column flex-lg-row w-100 align-items-start align-items-lg-center gap-2 gap-lg-3">
 
                         <!-- Buscador -->
-                        <form class="d-flex w-100 contenedor-buscador ms-lg-auto">
-                            <input class="form-control input-buscador" type="search" placeholder="Buscar en VidaMarket">
-                            <button class="btn btn-danger ms-2">Buscar</button>
-                        </form>
+                        <form class="d-flex w-100 contenedor-buscador ms-lg-auto" onsubmit="redirigirBusqueda(event)">
+    <input id="inputBusqueda" class="form-control input-buscador" type="search" placeholder="Buscar en VidaMarket">
+    <button type="submit" class="btn btn-danger ms-2">Buscar</button>
+</form>
 
                         <!-- Dropdown Categ esc -->
                         <div class="dropdown d-none d-lg-block mb-2 mb-lg-0">
