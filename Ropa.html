@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +12,7 @@
     <link rel="stylesheet" href="estiloProyec.css">
 </head>
 
-<body>
+<body class="PagRopa">
     <header>
         <nav class="navbar navbar-expand-lg border-bottom shadow-sm py-3">
             <div class="container">
@@ -81,87 +80,151 @@
             </div>
         </nav>
     </header>
+    
 
-    <main>
-
-        <div class="Principal text-center">
-            <video autoplay muted loop class="video-fondo">
-                        <source src="Videos/VideoIni.mp4" type="video/mp4">
-                    </video>
-            <h1 class="prodP-transparente logo-text-animada">
-                <span class="letra-ola">V</span>
-                <span class="letra-ola">i</span>
-                <span class="letra-ola">d</span>
-                <span class="letra-ola">a</span>
-                <span class="letra-ola"> </span>
-                <span class="letra-ola">M</span>
-                <span class="letra-ola">a</span>
-                <span class="letra-ola">r</span>
-                <span class="letra-ola">k</span>
-                <span class="letra-ola">e</span>
-                <span class="letra-ola">t</span>
-            </h1>
-        </div>
-    </main>
-
-    <section class="container productos">
-        <h2 class="text-start mb-4">Productos</h2>
+    <section class="container py-5">
 
         <div class="row g-4">
 
             <!-- ---- CARD 1 ---- -->
-            <div class="col-12 col-md-6">
+            <!-- ---- TARJETA DEL PRODUCTO ---- -->
+            <div class="col-12 col-md-4">
                 <div class="text-center prodP-transparente">
                     <div class="img-box">
                         <img src="imagenes/ROPA2.PNG" class="img-producto">
                     </div>
-                    <a href="Ropa.html" class="btn btn-outline-dark mt-3 px-4 py-2 rounded-pill">
-                        Ropa
-                    </a>
+
+                    <div class="d-flex gap-2 justify-content-center mt-2">
+
+                        <a href="ProdIndiv.html" class="btn btn-danger btn-sm">VER</a>
+
+                        <button class="btn btn-danger btn-sm" onclick="agregarAlCarrito({
+                    id: 101,
+                    nombre: 'Polera Negra',
+                    precio: 50,
+                    imagen: 'imagenes/ROPA2.PNG'
+                })">
+                            Añadir al Carrito
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ---- CARD 2 ---- -->
+            <div class="col-12 col-md-4">
+                <div class="text-center prodP-transparente">
+                    <div class="img-box">
+                        <img src="imagenes/ROPA3.PNG" class="img-producto">
+                    </div>
+                    <div class="d-flex gap-2 justify-content-center mt-2">
+                        <a href="ProdIndiv.html" class="btn btn-danger btn-sm">
+                            VER
+                        </a>
+                        <button class="btn btn-danger btn-sm" onclick="agregarAlCarrito(1)">Añadir al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- ---- CARD 3 ---- -->
+            <div class="col-12 col-md-4">
+                <div class="text-center prodP-transparente">
+                    <div class="img-box">
+                        <img src="imagenes/ROPA4.PNG" class="img-producto">
+                    </div>
+                    <div class="d-flex gap-2 justify-content-center mt-2">
+                        <a href="ProdIndiv.html" class="btn btn-danger btn-sm">
+                            VER
+                        </a>
+                        <button class="btn btn-danger btn-sm" onclick="agregarAlCarrito(1)">Añadir al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- ---- CARD 1 ---- -->
+            <div class="col-12 col-md-4">
+                <div class="text-center prodP-transparente">
+                    <div class="img-box">
+                        <img src="imagenes/ROPA5.PNG" class="img-producto">
+                    </div>
+                    <div class="d-flex gap-2 justify-content-center mt-2">
+                        <a href="ProdIndiv.html" class="btn btn-danger btn-sm">
+                            VER
+                        </a>
+                        <button class="btn btn-danger btn-sm" onclick="agregarAlCarrito(1)">Añadir al Carrito</button>
+                    </div>
                 </div>
             </div>
 
             <!-- ---- CARD 2 ---- -->
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-4">
                 <div class="text-center prodP-transparente">
                     <div class="img-box">
-                        <img src="imagenes/tec2.png" class="img-producto">
+                        <img src="imagenes/ROPA7.PNG" class="img-producto">
                     </div>
-                    <a href="tecnologia.html" class="btn btn-outline-dark mt-3 px-4 py-2 rounded-pill">
-                        Tecnologia
-                    </a>
+                    <div class="d-flex gap-2 justify-content-center mt-2">
+                        <a href="ProdIndiv.html" class="btn btn-danger btn-sm">
+                            VER
+                        </a>
+                        <button class="btn btn-danger btn-sm" onclick="agregarAlCarrito(1)">Añadir al Carrito</button>
+                    </div>
                 </div>
             </div>
-
             <!-- ---- CARD 3 ---- -->
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-4">
                 <div class="text-center prodP-transparente">
                     <div class="img-box">
-                        <img src="imagenes/hogar1.png" class="img-producto">
+                        <img src="imagenes/ROPA8.PNG" class="img-producto">
                     </div>
-                    <a href="hogar.html" class="btn btn-outline-dark mt-3 px-4 py-2 rounded-pill">
-                        Hogar
-                    </a>
+                    <div class="d-flex gap-2 justify-content-center mt-2">
+                        <a href="ProdIndiv.html" class="btn btn-danger btn-sm">
+                            VER
+                        </a>
+                        <button class="btn btn-danger btn-sm" onclick="agregarAlCarrito(1)">Añadir al Carrito</button>
+                    </div>
                 </div>
             </div>
-
-            <!-- ---- CARD 4 ---- -->
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-4">
                 <div class="text-center prodP-transparente">
                     <div class="img-box">
-                        <img src="imagenes/cocina1.png" class="img-producto">
+                        <img src="imagenes/ROPA9.PNG" class="img-producto">
                     </div>
-                    <a href="cocina.html" class="btn btn-outline-dark mt-3 px-4 py-2 rounded-pill">
-                        Cocina
-                    </a>
+                    <div class="d-flex gap-2 justify-content-center mt-2">
+                        <a href="ProdIndiv.html" class="btn btn-danger btn-sm">
+                            VER
+                        </a>
+                        <button class="btn btn-danger btn-sm" onclick="agregarAlCarrito(1)">Añadir al Carrito</button>
+                    </div>
                 </div>
             </div>
-
-        </div>
+            <div class="col-12 col-md-4">
+                <div class="text-center prodP-transparente">
+                    <div class="img-box">
+                        <img src="imagenes/ROPA10.PNG" class="img-producto">
+                    </div>
+                    <div class="d-flex gap-2 justify-content-center mt-2">
+                        <a href="ProdIndiv.html" class="btn btn-danger btn-sm">
+                            VER
+                        </a>
+                        <button class="btn btn-danger btn-sm" onclick="agregarAlCarrito(1)">Añadir al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="text-center prodP-transparente">
+                    <div class="img-box">
+                        <img src="imagenes/ROPA2.PNG" class="img-producto">
+                    </div>
+                    <div class="d-flex gap-2 justify-content-center mt-2">
+                        <a href="ProdIndiv.html" class="btn btn-danger btn-sm">
+                            VER
+                        </a>
+                        <button class="btn btn-danger btn-sm" onclick="agregarAlCarrito(1)">Añadir al Carrito</button>
+                    </div>
+                </div>
+            </div>
     </section>
 
-
-
+    
     <footer class="bg-dark text-white py-5 mt-5">
         <div class="container">
             <div class="row justify-content-center text-center">

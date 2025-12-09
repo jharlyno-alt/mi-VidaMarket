@@ -11,8 +11,9 @@
 
     .letra-ola {
         display: inline-block;
-        color: #dc3545;
-        font-size: 2rem;
+        color: black;
+        font-weight: 700;
+        font-size: 5rem;
         animation: animacion-ola 1.2s infinite;
     }
 
@@ -132,7 +133,10 @@
         color: #dc3545;
     }
 
-
+h2 {
+    color: black;
+    text-shadow: 2px 2px 5px white;
+}
     .img-box {
         width: 100%;
         height: 350px;
@@ -158,14 +162,13 @@
         transform: translateY(-6px);
     }
 
+   
     .Principal {
     position: relative;
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
 }
 .video-fondo {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -178,9 +181,19 @@
     z-index: 1;
     color: #dc3545;
 }
-.productos {
+main, .productos, footer{
     position: relative;
-    z-index: 1;
-    margin-top: -100vh; 
-    padding-top: 100vh; 
+    z-index: 10;
 }
+header {
+    position: relative;
+    background-color: white !important;
+    z-index: 9999 !important;
+}
+/*pag princ*/
+
+
+/*ropa*/
+.PagRopa{
+            background-color: #dc3545; /* color de fondo */
+        }
