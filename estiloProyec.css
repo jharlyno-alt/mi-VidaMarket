@@ -133,10 +133,12 @@
         color: #dc3545;
     }
 
-h2 {
-    color: black;
-    text-shadow: 2px 2px 5px white;
-}
+    h2 {
+        color: black;
+        text-shadow: 2px 2px 5px white;
+        font-weight: 700;
+    }
+
     .img-box {
         width: 100%;
         height: 350px;
@@ -145,11 +147,13 @@ h2 {
         align-items: center;
         overflow: hidden;
     }
+
     .img-box img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
+
     .prodP-transparente {
         background: rgba(255, 255, 255, 0.6);
         padding: 20px;
@@ -157,43 +161,53 @@ h2 {
         backdrop-filter: blur(5px);
         transition: all 0.3s ease;
     }
+
     .prodP-transparente:hover {
         box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.25);
         transform: translateY(-6px);
     }
 
-   
+
     .Principal {
-    position: relative;
-    width: 100%;
-}
-.video-fondo {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-.logo-text-animada {
-    position: relative;
-    z-index: 1;
-    color: #dc3545;
-}
-main, .productos, footer{
-    position: relative;
-    z-index: 10;
-}
-header {
-    position: relative;
-    background-color: white !important;
-    z-index: 9999 !important;
-}
-/*pag princ*/
+        position: relative;
+        width: 100%;
+    }
+
+    .video-fondo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .logo-text-animada {
+        position: relative;
+        z-index: 1;
+        color: #dc3545;
+    }
+
+    main,
+    .productos,
+    footer,
+    .containerCarrusel {
+        position: relative;
+        z-index: 10;
+    }
+
+    header {
+        position: relative;
+        background-color: white !important;
+        z-index: 9999 !important;
+    }
+
+    /*pag princ*/
 
 
-/*ropa*/
-.PagRopa{
-            background-color: #dc3545; /* color de fondo */
-        }
+    /*ropa*/
+    .PagRopa {
+        background-color: #dc3545;
+        /* color de fondo */
+    }
