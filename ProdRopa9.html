@@ -93,47 +93,54 @@
 
             <!-- GALERÍA -->
             <div class="col-md-6 d-flex justify-content-center">
-    <img id="mainImage" src="imagenes/ROPA10.PNG" class="img-producto" alt="Zapatos deportivos">
-</div>
-
-<div class="col-lg-6">
-    <h3 class="fw-semibold">Zapatos deportivos</h3>
-
-    <div class="row g-2 mb-3">
-        <div class="col-6">
-            <div class="border rounded p-3 text-center bg-white shadow-sm">
-                <h4 class="text-danger fw-bold mb-1">Bs 140</h4>
-                <p class="small m-0">1 Par</p>
+                <img id="mainImage" src="imagenes/ROPA10.PNG" class="img-producto" alt="Zapatos deportivos">
             </div>
-        </div>
-    </div>
 
-    <div class="detalle-producto">
-        <h5>Color</h5>
-        <ul class="small">
-            <li>Azul con detalles naranjas</li>
-        </ul>
+            <div class="col-lg-6">
+                <h3 class="fw-semibold">Zapatos deportivos</h3>
 
-        <h5>Género</h5>
-        <ul class="small">
-            <li>Unisex</li>
-        </ul>
-
-        <h5>Detalles del producto</h5>
-        <ul class="small">
-            <li>Suela antideslizante</li>
-            <li>Ideales para correr</li>
-            <li>Amortiguación de alta calidad</li>
-        </ul>
-    </div>
-
-    <div >
-                        <a href="Ropa.html" class="btn btn-danger btn-sm">
-                            atras
-                        </a>
-                        <button class="btn btn-danger btn-sm" onclick="agregarAlCarrito(1)">Añadir al Carrito</button>
+                <div class="row g-2 mb-3">
+                    <div class="col-6">
+                        <div class="border rounded p-3 text-center bg-white shadow-sm">
+                            <h4 class="text-danger fw-bold mb-1">Bs 140</h4>
+                            <p class="small m-0">1 Par</p>
+                        </div>
                     </div>
-</div>
+                </div>
+
+                <div class="detalle-producto">
+                    <h5>Color</h5>
+                    <ul class="small">
+                        <li>Azul con detalles naranjas</li>
+                    </ul>
+
+                    <h5>Género</h5>
+                    <ul class="small">
+                        <li>Unisex</li>
+                    </ul>
+
+                    <h5>Detalles del producto</h5>
+                    <ul class="small">
+                        <li>Suela antideslizante</li>
+                        <li>Ideales para correr</li>
+                        <li>Amortiguación de alta calidad</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <a href="Ropa.html" class="btn btn-danger btn-sm">
+                        atras
+                    </a>
+                    <button class="btn btn-danger btn-sm" onclick="agregarAlCarrito({
+    id: 209,
+    nombre: 'Zapatos deportivos',
+    precio: 140,
+    imagen: 'imagenes/ROPA9.png'
+})">
+                        Añadir al Carrito
+                    </button>
+                </div>
+            </div>
 
 
         </div>
@@ -171,7 +178,7 @@
     </footer>
 
 
-    <script src="js/script29P2.js"></script>
+    <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>

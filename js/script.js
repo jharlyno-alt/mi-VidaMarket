@@ -186,6 +186,8 @@ function obtenerCarrito() {
             </tr>
         `;
     });
+    totalGeneral.textContent = total + " Bs";
+    localStorage.setItem("totalGeneral", total);
 }
 
 
