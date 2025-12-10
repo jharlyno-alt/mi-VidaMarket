@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VidaMarket – Sartén antiadherente</title>
+    <meta name="description" content="Sartén antiadherente profesional disponible en VidaMarket. Compra segura, rápida y confiable.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="estiloProyec.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg border-bottom shadow-sm py-3 align-items-center">
+            <div class="container d-flex align-items-center">
+                <a href="index.html" class="d-flex align-items-center text-decoration-none">
+                    <img src="imagenes/logoCorto.png" class="logo img-fluid" alt="Logo VidaMarket">
+                    <span class="ms-2 text-danger fw-semibold logo-text">VidaMarket</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <div class="d-flex flex-column flex-lg-row w-100 align-items-start align-items-lg-center gap-3 mt-3 mt-lg-0">
+                        <form class="d-flex w-100 contenedor-buscador" onsubmit="redirigirBusqueda(event)">
+                            <input id="inputBusqueda" class="form-control" type="search" placeholder="Buscar en VidaMarket">
+                            <button type="submit" class="btn btn-danger ms-2">Buscar</button>
+                        </form>
+                        <div class="dropdown d-none d-lg-block">
+                            <button class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">Categoría</button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Ropa.html">Ropa</a></li>
+                                <li><a class="dropdown-item" href="Tecnologia.html">Tecnología</a></li>
+                                <li><a class="dropdown-item" href="Hogar.html">Hogar</a></li>
+                                <li><a class="dropdown-item" href="Cocina.html">Cocina</a></li>
+                            </ul>
+                        </div>
+                        <div class="d-flex flex-column d-lg-none">
+                            <span class="fw-semibold mb-1">Categoría</span>
+                            <a href="Ropa.html" class="link-categoria">Ropa</a>
+                            <a href="Tecnologia.html" class="link-categoria">Tecnología</a>
+                            <a href="Hogar.html" class="link-categoria">Hogar</a>
+                            <a href="Cocina.html" class="link-categoria">Cocina</a>
+                        </div>
+                        <ul class="navbar-nav d-flex flex-row ms-lg-auto gap-3">
+                            <li class="nav-item"><a href="carrito.html" class="nav-link icon-nav"><i class="bi bi-cart"></i></a></li>
+                            <li class="nav-item"><a href="login.html" class="nav-link icon-nav"><i class="bi bi-person"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+        <div class="row g-4">
+            <div class="col-md-6 d-flex justify-content-center">
+                <img id="mainImage" src="imagenes/cocina9.PNG" class="img-producto" alt="Sartén antiadherente">
+            </div>
+            <div class="col-lg-6">
+                <h3 class="fw-semibold">Sartén antiadherente</h3>
+                <div class="row g-2 mb-3">
+                    <div class="col-6">
+                        <div class="border rounded p-3 text-center bg-white shadow-sm">
+                            <h4 class="text-danger fw-bold mb-1">Bs 195</h4>
+                            <p class="small m-0">1 Unidad</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="detalle-producto">
+                    <h5>Color</h5>
+                    <ul class="small">
+                        <li>Negro</li>
+                    </ul>
+                    <h5>Especificaciones</h5>
+                    <ul class="small">
+                        <li>Diámetro: 28 cm</li>
+                        <li>Material: Aluminio forjado</li>
+                        <li>Revestimiento antiadherente multicapa</li>
+                        <li>Compatible con todo tipo de cocinas</li>
+                    </ul>
+                    <h5>Detalles del producto</h5>
+                    <ul class="small">
+                        <li>Libre de PFOA</li>
+                        <li>Mango ergonómico resistente al calor</li>
+                        <li>Base difusora de calor</li>
+                        <li>Fácil limpieza</li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="Cocina.html" class="btn btn-danger btn-sm">Atrás</a>
+                    <button class="btn btn-danger btn-sm" onclick="agregarAlCarrito(1)">Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-5 mt-5">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4 class="fs-5">Políticas y Soporte</h4>
+                    <p class="small mb-0">© 2025 - 2026 VidaMarket</p>
+                    <a href="#" class="text-white-50 d-block mt-2">Términos de privacidad</a>
+                    <a href="#" class="text-white-50 d-block">Soporte Técnico</a>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4 class="fs-5">Contacto</h4>
+                    <p class="text-white-50 mb-1">Correo: VidaMarket@gmail.com</p>
+                    <p class="text-white-50 mb-1">Tel: +591 78659632</p>
+                    <p class="text-white-50 mb-1">La Paz, Bolivia</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4 class="fs-5">Síguenos</h4>
+                    <a href="#" class="text-white-50 d-block mb-2">Facebook</a>
+                    <a href="#" class="text-white-50 d-block mb-2">Instagram</a>
+                    <a href="#" class="text-white-50 d-block mb-2">YouTube</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

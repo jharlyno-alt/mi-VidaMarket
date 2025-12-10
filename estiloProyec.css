@@ -138,14 +138,15 @@
         text-shadow: 2px 2px 5px white;
         font-weight: 700;
     }
-    .detalle-producto {
-    font-size: 1.5rem; 
-}
 
-.detalle-producto h5 {
-    font-size: 2rem; 
-    font-weight: 600;
-}
+    .detalle-producto {
+        font-size: 1.5rem;
+    }
+
+    .detalle-producto h5 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
 
 
     .img-box {
@@ -214,15 +215,36 @@
 
     /*pag princ*/
 
-.img-producto {
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 10px;
-}
+    .img-producto {
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
 
 
     /*ropa*/
     .PagSec {
         background-color: #dc3545;
     }
+
+    /*pago*/
+    body {
+    background-color: #f5f5f5;
+}
+
+.payment-container {
+    max-width: 900px;
+    margin: auto;
+    margin-top: 40px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.payment-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #198754;
+}
