@@ -138,6 +138,15 @@
         text-shadow: 2px 2px 5px white;
         font-weight: 700;
     }
+    .detalle-producto {
+    font-size: 1.5rem; 
+}
+
+.detalle-producto h5 {
+    font-size: 2rem; 
+    font-weight: 600;
+}
+
 
     .img-box {
         width: 100%;
@@ -205,9 +214,15 @@
 
     /*pag princ*/
 
+.img-producto {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 
     /*ropa*/
     .PagSec {
         background-color: #dc3545;
-        /* color de fondo */
     }

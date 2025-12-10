@@ -48,3 +48,5 @@ function redirigirBusqueda(e) {
         window.location.href = "Resultados.html?buscar=" + encodeURIComponent(texto);
     }
 }
+
+
